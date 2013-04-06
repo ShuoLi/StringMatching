@@ -7,15 +7,7 @@ gem 'rails', '3.1.0'
 
 gem 'exception_notification', :require => 'exception_notifier'
 
-
-group :development do
-  gem 'sqlite3'
-  gem 'wirb'
-end
-
-group :production do
-  gem "pg"
-end
+gem "pg"
 
 gem 'exception_notification', :require => 'exception_notifier'
 
