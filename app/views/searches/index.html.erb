@@ -1,0 +1,17 @@
+<h1>Search Function. </h1>
+<h3>My search works by following steps:</h3>
+<ol>
+	<li>Find all possible patterns in a string. Add this patterns to an array.</li>
+	<li>Iterate the dictory.</li>
+	<li>If current line in the dictory match any pattern in pattern array. Add it to the result String list.</li>
+	<li>return the result list</li>
+</ol>
+
+<%= form_tag searches_path, :method => 'get' do %>
+<%= text_field_tag :search_text, params[:search_text],:placeholder=>"saerch"%>
+	<button id='submit' type="submit" class="btn-search" ><%=image_tag("search.png",:size => "16x18")%></button>
+<% end %>
+
+<div id='return' class='return'>
+	<%=@content%>
+</div>
